@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: dubbo-provider1
+server:
+  port: 9090
+dubbo:
+  registry:
+    protocol: zookeeper
+    address: localhost:2181
+  protocol:
+    port: 12345
+    name: dubbo
+    id: dubbo
+    status: server
+  application:
+    name: dubbo-provider-name1
+    id: dubbo-provider-id1
+  monitor:
+    protocol: registry

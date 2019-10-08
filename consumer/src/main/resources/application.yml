@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: dubbo-consumer1
+server:
+  port: 9091
+dubbo:
+  application:
+    id: dubbo-consumer-id1
+    name: dubbo-consumer-name1
+  registry:
+    protocol: zookeeper
+    address: localhost:2181
+  monitor:
+    protocol: registry

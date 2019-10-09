@@ -12,3 +12,8 @@ dubbo:
     address: localhost:2181
   monitor:
     protocol: registry
+  protocol:
+      port: 8091
+      name: dubbo
+      id: dubbo-consumer1-protocol
+      status: server

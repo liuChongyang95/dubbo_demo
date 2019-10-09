@@ -1,7 +1,7 @@
 package com.provider.impl;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.Iservice.SayService;
+import org.apache.dubbo.config.annotation.Service;
 import org.springframework.stereotype.Component;
 
 @Service

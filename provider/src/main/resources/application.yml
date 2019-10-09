@@ -4,16 +4,20 @@ spring:
 server:
   port: 9090
 dubbo:
+#  服务暴露地址
   registry:
     protocol: zookeeper
     address: localhost:2181
+#    协议方式
   protocol:
-    port: 12345
+    port: 8090
     name: dubbo
-    id: dubbo
+    id: dubbo-provider1-protocol
     status: server
+#    提供者应用名称
   application:
     name: dubbo-provider-name1
     id: dubbo-provider-id1
+#    将应用注册到监控中心
   monitor:
     protocol: registry
